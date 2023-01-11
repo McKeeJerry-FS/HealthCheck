@@ -7,6 +7,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { HealthCheckComponent } from './health-check/health-check.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Angular Material
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { materialize } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -14,11 +22,17 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
     HomeComponent,
     FetchDataComponent,
     NavMenuComponent,
+    HealthCheckComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    /*Angular materialize*/
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
